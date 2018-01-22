@@ -1,0 +1,110 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "LIST_OF_UNITS",
+        "values": [
+          {
+            "id": null,
+            "name": {
+              "value": "Living",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Dining",
+              "synonyms": []
+            }
+          },
+          {
+            "id": null,
+            "name": {
+              "value": "Bedroom",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "Mode",
+        "samples": [
+          "the status of {Unit}",
+          "the status",
+          "his status"
+        ],
+        "slots": [
+          {
+            "name": "Unit",
+            "type": "LIST_OF_UNITS"
+          }
+        ]
+      },
+      {
+        "name": "Off",
+        "samples": [
+          "turn off {Unit}",
+          "switch off {Unit}",
+          "power off {Unit}",
+          "turn off",
+          "switch off",
+          "power off"
+        ],
+        "slots": [
+          {
+            "name": "Unit",
+            "type": "LIST_OF_UNITS"
+          }
+        ]
+      },
+      {
+        "name": "On",
+        "samples": [
+          "turn on {Unit}",
+          "switch on {Unit}",
+          "power on {Unit}",
+          "turn on",
+          "switch on",
+          "power on"
+        ],
+        "slots": [
+          {
+            "name": "Unit",
+            "type": "LIST_OF_UNITS"
+          }
+        ]
+      },
+      {
+        "name": "Temperature",
+        "samples": [
+          "what's the temperature of {Unit}",
+          "the temperature of {Unit}",
+          "what's the temperature",
+          "the temperature"
+        ],
+        "slots": [
+          {
+            "name": "Unit",
+            "type": "LIST_OF_UNITS"
+          }
+        ]
+      }
+    ],
+    "invocationName": "daikin"
+  }
+}

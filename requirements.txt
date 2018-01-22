@@ -1,0 +1,4 @@
+click==5.1
+flask-ask==0.8.8
+requests==2.18.4
+netdisco==1.2.3
